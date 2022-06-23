@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %} 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block style %}{% endblock %}
+        <meta name="description" content="la chitarrorchestra di Suzzara"/>
+        <meta name="keywords" content="chitarrorchestra, chitarra, suzzara, scuola comunale di musica suzzara"/> 
+        {% endblock %}
+    </head>
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <body>
+    <div id="contenitore">
+        <div id="intestazione">
+        {% block logo %}
+        {% endblock %}
+        <br/>
+
+        {% block header1 %}{% endblock %}
+        </div>
+
+        {% block topRight %}{% endblock %}
+
+        <div id="img-intestazione">
+          {% block imgIntestazione %} {% endblock %}
+        </div>
+        
+        {% block content %}{% endblock %}
+
+        
+        {% include "includeFooter.html" %}
+    </body>
+</html>
+
+<!--PER QUANDO AGGIUNGO L'AUTENTICAZIONE-->
+<!-- {% if user.is_authenticated and "ok" in request.GET.login  %}
+
+<div id="info" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Welcome {{user.username}} </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> La procedura di login è andata a buon fine </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<script>
+  $(document).ready(function(){
+      $("#info").modal('show');
+  });
+</script>
+
+{% endif %}
+-->

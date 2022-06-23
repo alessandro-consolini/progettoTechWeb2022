@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} home | Chitarrorchestra suzzara {% endblock %} 
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+{% endblock %}
+
+{% block logo %} 
+    <img src="{% static '/imgs/logo_scuola_musica.jpg' %}" alt="LogoScuolaMusica" width="150" height="150" style="float:left; padding:20px;"/>
+{% endblock %}
+
+{% block header1 %}
+    <h1>Chitarrorchestra di Suzzara</h1>
+    <h4>Diretta dal prof. Franco Tidona</h4>
+{% endblock %}
+
+{% block topRight %}
+    <div id="login">
+    <span><a href="{% url 'login' %}">accedi</a> | <a href="{% url 'registrazione' %}">registrati</a></span></br>
+    </div>
+{% endblock %}
+
+{% block imgIntestazione %} 
+    <br/><br/>
+    <img src="{% static '/imgs/img_menu.png' %}" widith="1000px" height="292px" alt="fotoConcerto"/>
+{% endblock %}
+
+
+<!-- verrà modificato ovviamente -->
+{% block content %}
+    <div class="box_evento">
+        <div class="img_box_evento">
+         <img src="../immagini/carmen_locandina.png" alt="locandina Carmen" width="300" height="360"/>
+        </div>
+        <p>10/07/2018</p>
+        <span>Recita teatrale della Carmen di Bizet con la partecipazione della CHITARRORCHESTRA di Suzzara.</br><p>Partecipazione GRATUITA!</p>
+        20/07/2018, Teatro Comunale di Marmirolo, ore 21:00</span>
+        <p>REPLICA:21/07/2018</p>
+        <span>Per maggiori informazioni contattare: 3664875316 AVVISO: SI PREGA DI PRENOTARE AL NUMERO SOPRA INDICATO<br/><br/></span>
+    </div>
+{% endblock %}

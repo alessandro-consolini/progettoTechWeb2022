@@ -1,0 +1,55 @@
+﻿body{
+	margin: 0; 
+	padding: 0;
+	background-color:BurlyWood;
+	color: black;
+	font-size: 20px;
+	font-family: open sans, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#contenitore{
+	width: 1000px;
+	height: 100;
+	margin: 50px auto;/*auto = al centro della pagina*/
+	background: white;
+	border:solid;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-top-width: 2px;
+	border-top-color: silver;
+}
+
+#intestazione{
+	width:650px;
+	height: 150px;
+	float:left;
+	background:white;
+}
+
+#login{
+	height: 150px;
+	display: inline-block;	/*per fare avere l'effetto wrap-content*/
+	margin-top:30px;
+	padding-left: 150px;
+}
+
+#img-intestazione{
+	padding-top:200px;
+	margin-top:100px;
+}
+
+#footer{
+	border-top: 1px solid #000;
+	padding-top:5px;
+    display: block;
+    margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	text-align:center;
+	background-color:chocolate ;
+}
