@@ -9,10 +9,10 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 {% endblock %}
 
-{% block title %} Creazione Utente {{ form.user_group_name }} {% endblock %} 
+{% block title %} Accesso Utente {{ form.user_group_name }} {% endblock %} 
 
 {% block header1 %}
-    <h1>Registrazione Utente</h1>
+    <h1>Accesso Area Riservata</h1>
     <h4>Compilare i campi necessari</h4>
 {% endblock %}
 
@@ -24,13 +24,18 @@
 
 
 {% block content %} 
+<br/><br/><br/>
     <div id="formBox">
         <form method="post"> {% csrf_token %}
 
             {{form | crispy}}
-        
-            <input type="submit" class="btn btn-success" value="Registrati">
+
+            <br/>
+            <input type="submit" class="btn btn-success" value="Entra">
         </form>
+
+        <br/>
+        <span>Non ti sei ancora registrato? <a class="btn btn-primary" href="{% url 'registrazione' %}">Registrati ora!</a> </span>
     </div>
 
 {% endblock %}

@@ -1,0 +1,20 @@
+Nel mio paese suono in un' orchestra di chitarre, la mia idea di progetto è di creare un sito per mostrare le news e gli eventi 
+riguardanti questa orchestra.
+
+Nel progetto sarà presente un db che conterrà i dati degli utenti che si registrano e le news.
+Esisteranno quattro tipi di utenti:
+- utenti anonimi: potranno accedere alla pagina di visualizzazione delle news e potranno eseguire ricerche testuali sui contenuti di esse.
+- utenti registrati: potranno anche commentare le news.
+- utenti editori: hanno gli stessi permessi degli utenti normali più la possibilità di aggiungere, modificare ed eliminare le news da loro create.
+- utente amministratore: possono aggiungere, modificare ed eliminare tutte le news.
+
+Un account di tipo "editore" per essere tale deve essere accettato dall'amministratore.
+L'account di tipo amministratore può quindi visualizzare tutti gli utenti e garantire o  revocare questi permessi.
+Per registrarsi l'immagine del profilo è obbligatoria.
+Alle news è possibile aggiungere un'immagine facoltativa.
+
+
+Buongiorno Alessandro,
+il tema applicativo va bene. La traccia proposta prevede una interazione un pò troppo scarsa tra utente e sito, quindi farei le seguenti modifiche/aggiunte:
+- strutturare i commenti alle news in una sorta di thread che un utente può decidere di seguire (si viene notificati via email se ci sono ulteriori commenti su un thread che si è deciso di seguire o che si è commentato
+- inserire la possibilità di inviare messaggi agli editor o all'amministrazione per chiedere informazioni sugli eventi

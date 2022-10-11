@@ -18,10 +18,22 @@
 {% endblock %}
 
 {% block topRight %}
-    <div id="login">
-    <span><a href="{% url 'login' %}">accedi</a> | <a href="{% url 'registrazione' %}">registrati</a></span><br/>
+    <div id="userLogged">
+        <table border="0"><tr>
+            <td>
+                <img src="{% static '/imgs/userImg_placeholder.png' %}" alt="it" />
+            </td>
+            <td>
+                <span>Benvenuto</span><br/>
+                <span>nome</span><br/>
+                <span>cognome</span>
+                <a class="btn btn-secondary" href="{% url 'registrazione' %} ">esci</a>
+            </td>
+        </tr></table>
     </div>
 {% endblock %}
+
+
 
 {% block imgIntestazione %} 
     <br/><br/>
@@ -33,13 +45,12 @@
 {% block content %}
     <div class="box_evento">
         <div class="img_box_evento">
-         <img src="{% static '/imgs/carmen_locandina.png' %}" alt="locandina Carmen" width="300" height="360" style="float:left;"/>
+         <img src="../immagini/carmen_locandina.png" alt="locandina Carmen" width="300" height="360"/>
         </div>
         <p>10/07/2018</p>
         <span>Recita teatrale della Carmen di Bizet con la partecipazione della CHITARRORCHESTRA di Suzzara.</br><p>Partecipazione GRATUITA!</p>
         20/07/2018, Teatro Comunale di Marmirolo, ore 21:00</span>
         <p>REPLICA:21/07/2018</p>
         <span>Per maggiori informazioni contattare: 3664875316 AVVISO: SI PREGA DI PRENOTARE AL NUMERO SOPRA INDICATO<br/><br/></span>
-        <br/><br/><br/>
     </div>
 {% endblock %}

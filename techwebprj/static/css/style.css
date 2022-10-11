@@ -26,9 +26,13 @@ a {
 
 #intestazione{
 	width:650px;
-	height: 150px;
+	height: 205px;
 	float:left;
 	background:white;
+}
+
+#paroleIntestazione{
+	margin-left:50px;
 }
 
 #login{
@@ -38,9 +42,31 @@ a {
 	padding-left: 150px;
 }
 
-#img-intestazione{
-	padding-top:200px;
-	margin-top:100px;
+#userLogged{
+	height: 150px;
+	width: 150px;
+	display: inline-block;	/*per fare avere l'effetto wrap-content*/
+	margin-top:30px;
+	padding-left: 120px;
+	font-size: 15px;
+}
+
+.userDetails span{
+	font-size:15px;
+	padding: 5px;
+}
+
+#toHome{
+	height: 50px;
+	display: inline-block;	/*per fare avere l'effetto wrap-content*/
+	margin-top:30px;
+	padding-left: 125px;
+}
+
+#formBox{
+	display: inline-block;	/*per fare avere l'effetto wrap-content*/
+	margin-left: 50px;
+	margin-bottom: 50px;	
 }
 
 #footer{
